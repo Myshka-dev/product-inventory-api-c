@@ -5,10 +5,20 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 
+// middlewear to parse json body
+app.use(express.json());
 
-// Define a route for the root URL that sends "Hello World!" as the response
+// custom middlewear to log request method and url. meaning that every time a request is made to the server, it will log the method (GET, POST, etc.) and the URL of the request to the console.
+app.use((req,res,next) => {
+    console.log(`${req.method} ${req.url}`);
+    next();
+});
+
+// API ENDPOINTS
+
+//simple route to test the server
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send('Product inventory is working!');
 });
 
 // Start the server and listen on the specified port
