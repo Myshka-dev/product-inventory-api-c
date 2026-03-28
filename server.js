@@ -14,7 +14,63 @@ app.use((req,res,next) => {
     next();
 });
 
+// Data storage for products (in-memory) (by Pauline Michael: branch name: develop-pauline)
+let products = [
+    // INSERT SAMPLE PRODUCTS HERE FOR TESTING PURPOSES (LIKE 3)
+    //
+    //
+    //
+    // EXAMPLE: {id: 1, name: "Product 1", price: 10.99, quantity: 100, category: "Category 1"  }
+];
+
 // API ENDPOINTS
+
+
+//1. GET ALL PRODUCTS (by Pauline Michael: branch name: develop-pauline)
+
+     // YOUR CODE COMES HERE
+
+
+
+//2. GET A SINGLE PRODUCT BY ID (by Nkono precious: branch name: develop-precious)
+
+    // YOUR CODE COMES HERE
+
+
+
+
+//3. CREATE A NEW PRODUCT (by myshka)
+
+    // YOUR CODE COMES HERE 
+
+
+
+
+//4. UPDATE AN EXISTING PRODUCT BY ID(USE PATCH METHOD) (by Jubril Olaoluwa: branch name: develop-jubril)
+
+    // YOUR CODE COMES HERE
+
+
+
+
+//5. DELETE A PRODUCT BY ID(by Favour Edafe: branch name: develop-favour)
+
+    // YOUR CODE COMES HERE
+
+
+
+
+//HANDLER FOR UNDEFINED ROUTES (by ......: branch name:........ )
+
+    // YOUR CODE COMES HERE
+
+
+
+
+//HANDLER FOR INTERNAL SERVER ERRORS (by ......: branch name:........ )
+
+    // YOUR CODE COMES HERE
+
 
 //simple route to test the server
 app.get('/', (req, res) => {
